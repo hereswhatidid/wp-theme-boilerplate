@@ -219,5 +219,5 @@ class Theme_Name {
 }
 // Initialize the theme class
 if ( ! isset( $Theme_Name ) && function_exists( 'add_action' ) ) {
-	$Theme_Name = new Theme_Name();
+	$Theme_Name = Theme_Name::get_instance();
 }
